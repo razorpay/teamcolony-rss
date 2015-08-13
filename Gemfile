@@ -2,7 +2,14 @@
 source "https://rubygems.org"
 
 gem 'sinatra'
-gem 'dotenv', :groups => [:development, :test]
 gem 'httparty'
-gem 'minitest'
 gem 'ratom'
+
+group :test do
+  gem 'minitest'
+  gem 'webmock'
+end
+
+group :development do
+  gem 'dotenv'
+end
