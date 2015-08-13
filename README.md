@@ -1,4 +1,4 @@
-# teamcolony-rss
+# teamcolony-rss [![Build Status](https://travis-ci.org/razorpay/teamcolony-rss.svg?branch=master)](https://travis-ci.org/razorpay/teamcolony-rss)
 
 We use [TeamColony](http://teamcolony.com/) to help our team stay in sync.
 
