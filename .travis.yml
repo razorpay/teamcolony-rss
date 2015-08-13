@@ -1,0 +1,5 @@
+language: ruby
+services:
+  - memcached
+rvm:
+  - 2.2.2

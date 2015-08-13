@@ -4,7 +4,6 @@ source "https://rubygems.org"
 gem 'sinatra'
 gem 'httparty'
 gem 'ratom'
-gem 'memcachier'
 gem 'dalli'
 
 group :test do
@@ -15,4 +14,8 @@ end
 
 group :development do
   gem 'dotenv'
+end
+
+group :production do
+  gem 'memcachier'
 end
