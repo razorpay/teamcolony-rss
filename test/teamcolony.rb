@@ -1,13 +1,10 @@
 require "minitest/autorun"
-require 'dotenv'
 
 require_relative '../teamcolony'
 require_relative 'test_helper'
 
 class TestTeamColony < Minitest::Test
   def setup
-    require 'dotenv'
-    Dotenv.load
     @tc = TeamColony.new
     stub_get
   end

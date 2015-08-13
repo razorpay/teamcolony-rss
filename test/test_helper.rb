@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require 'webmock/minitest'
+require 'dotenv'
 
 def fixture_file(filename = '')
   filename = "export" + (filename==''? '' : "_#{filename}")
@@ -15,5 +16,8 @@ end
 
 def stub_get(filename = '')
   response = stub_response(filename)
-  stub_request(:get, /.*/).to_return(response)
+  stub_request(:any, /.*/).to_return(response)
 end
+
+# Make sure environment is loaded
+Dotenv.load
