@@ -40,5 +40,7 @@ class TeamColony
     response = self.class.get path, @options
     reports = response['team']['reports'] || []
     @cache.set path, reports, 3600
+
+    reports
   end
 end
