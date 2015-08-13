@@ -10,6 +10,7 @@ gem 'dalli'
 group :test do
   gem 'minitest'
   gem 'webmock'
+  gem 'rake'
 end
 
 group :development do
